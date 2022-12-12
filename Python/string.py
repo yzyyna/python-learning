@@ -23,7 +23,13 @@ print(num)
 longStr = '''It took me 6 months to write this Python tutorial.
 Please give me a to 'thumb' to keep it updated.
 The Python tutorial is available at http://c.biancheng.net/python/.'''
-print(longStr)
+longStr2 = """
+today
+is a good 
+day
+
+"""
+print(longStr, type(longStr2), longStr2)
 # Python 字符串中的反斜杠\有着特殊的作用，就是转义字符，例如上面提到的\'和\"，我们将在《Python转义字符》一节中详细讲解，这里大家先简单了解。
 # 转义字符有时候会带来一些麻烦，例如我要表示一个包含 Windows 路径D:\Program Files\Python 3.8\python.exe这样的字符串，在 Python 程序中直接这样写肯定是不行的，不管是普通字符串还是长字符串。因为\的特殊性，我们需要对字符串中的每个\都进行转义，也就是写成D:\\Program Files\\Python 3.8\\python.exe这种形式才行。
 # 这种写法需要特别谨慎，稍有疏忽就会出错。为了解决转义字符的问题，Python 支持原始字符串。在原始字符串中，\不会被当作转义字符，所有的内容都保持“原汁原味”的样子。
