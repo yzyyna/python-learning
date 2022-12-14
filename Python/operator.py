@@ -16,3 +16,10 @@ b = int(input("Input b: "))
 print("a大于b") if a > b else (print("a小于b") if a < b else print("a等于b"))
 c = a if 1 else 0
 print(c)
+
+
+def add(x, y): return x+y
+
+
+print(add(3, 4))
+print(globals())
